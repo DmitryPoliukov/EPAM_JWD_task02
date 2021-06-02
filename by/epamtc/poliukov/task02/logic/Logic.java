@@ -1,11 +1,11 @@
-package by.epamtc.poliukov.task02.tiposervice;
+package by.epamtc.poliukov.task02.logic;
 
 import by.epamtc.poliukov.task02.entity.Ball;
 import by.epamtc.poliukov.task02.entity.Color;
 
 import java.util.List;
 
-public class tipoBallService {
+public class Logic {
 
     public Color analyzeColor(String color) {
         switch (color) {
@@ -28,14 +28,6 @@ public class tipoBallService {
             }
         }
         return blueBallsCounter;
-    }
-
-    public double totalWeightBasket(List<Ball> basket) {
-        double totalWeight = 0;
-        for(Ball ball: basket) {
-            totalWeight += ball.getWeight();
-        }
-        return totalWeight;
     }
 
 }

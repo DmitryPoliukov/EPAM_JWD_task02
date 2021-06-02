@@ -1,6 +1,7 @@
 package by.epamtc.poliukov.task02.exception;
 
 public class IllegalWeightException extends Exception {
+
     public IllegalWeightException() {
         super();
     }

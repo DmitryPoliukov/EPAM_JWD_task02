@@ -17,17 +17,17 @@ public class DataReader {
     }
 
     public String readData() {
-        String inputColor;
+        String inputData;
         System.out.println("Enter the color of ball to add to basket \n" +
                 " r - red,\n b - blue,\n w - white, \n g - green \n" +
                 "basket - return data about filling the basket");
-        switch (inputColor = stringScanner.nextLine()) {
+        switch (inputData = stringScanner.nextLine()) {
             case "r":
             case "b":
             case "w":
             case "g":
             case "basket":
-                return inputColor;
+                return inputData;
             default:
                 System.out.println("Incorrect input");
                 return readData();

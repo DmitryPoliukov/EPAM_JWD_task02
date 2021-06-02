@@ -8,6 +8,13 @@ public class Ball implements Serializable {
     private Color color;
     private double weight;
 
+    public Ball(Color color, double weight) {
+        this.color = color;
+        this.weight = weight;
+    }
+
+    public Ball(){}
+
     public Color getColor() {
         return color;
     }
@@ -24,32 +31,32 @@ public class Ball implements Serializable {
         this.weight = weight;
     }
 
-    public Ball(Color color, double weight) {
-        this.color = color;
-        this.weight = weight;
-    }
-
-    public Ball(){}
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Ball ball = (Ball) o;
-        return weight == ball.weight &&
-                color == ball.color;
+        return (weight == ball.weight) &&
+                (color == ball.color);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(color, weight);
+        final int prime = 31;
+        int result = 2;
+        result = prime * result + color.hashCode();
+        result = prime * result + Double.hashCode(weight);
+        return result;
     }
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color=" + color +
-                ", weight=" + weight +
-                '}';
+        StringBuilder builder = new StringBuilder();
+        builder.append("Ball {Color = ");
+        builder.append(color);
+        builder.append(",weight = ");
+        builder.append(weight);
+        builder.append("}");
+        return builder.toString();
     }
 }
