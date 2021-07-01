@@ -1,7 +1,7 @@
 package by.epamtc.poliukov.task02.entity;
 
 import java.io.Serializable;
-import java.util.Objects;
+import java.util.Arrays;
 
 public class Ball implements Serializable {
 
@@ -43,8 +43,8 @@ public class Ball implements Serializable {
     @Override
     public int hashCode() {
         final int prime = 31;
-        int result = 2;
-        result = prime * result + color.hashCode();
+        int result = 1;
+        result = prime * result + (color == null ? 0: color.hashCode());
         result = prime * result + Double.hashCode(weight);
         return result;
     }
@@ -52,11 +52,12 @@ public class Ball implements Serializable {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("Ball {Color = ");
+        builder.append(getClass().getSimpleName());
+        builder.append(" [Color = ");
         builder.append(color);
         builder.append(",weight = ");
         builder.append(weight);
-        builder.append("}");
+        builder.append("]");
         return builder.toString();
     }
 }
