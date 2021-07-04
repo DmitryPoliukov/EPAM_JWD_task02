@@ -1,7 +1,6 @@
 package by.epamtc.poliukov.task02.entity;
 
 import java.io.Serializable;
-import java.util.Arrays;
 
 public class Ball implements Serializable {
 

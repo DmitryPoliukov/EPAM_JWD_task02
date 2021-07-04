@@ -1,7 +1,5 @@
 package by.epamtc.poliukov.task02.reader;
 
-import by.epamtc.poliukov.task02.entity.Color;
-
 import java.util.Scanner;
 
 public class DataReader {
