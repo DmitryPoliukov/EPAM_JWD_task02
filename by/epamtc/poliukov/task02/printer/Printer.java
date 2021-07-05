@@ -2,6 +2,11 @@ package by.epamtc.poliukov.task02.printer;
 
 import by.epamtc.poliukov.task02.entity.Ball;
 
+/**
+ * The Class Printer print messages to console.
+ *
+ * @author Dmitry Poliukov
+ */
 public class Printer {
     public void printResult(int blueBallsCounter, double totalWeightBasket) {
         System.out.printf("Amount of blue balls - %d, total weight of balls in basket - %.1f", blueBallsCounter,totalWeightBasket);

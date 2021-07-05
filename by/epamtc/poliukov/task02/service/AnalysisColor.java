@@ -5,6 +5,11 @@ import by.epamtc.poliukov.task02.entity.Color;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The Class AnalysisColor analyzes the color of the ball by letter from the console.
+ *
+ * @author Dmitry Poliukov
+ */
 public class AnalysisColor {
     private Map<String, Color> colorHashMap = new HashMap<>();
     {

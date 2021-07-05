@@ -5,6 +5,11 @@ import by.epamtc.poliukov.task02.entity.Color;
 
 import java.util.Iterator;
 
+/**
+ * The Class BlueBallsCounterCalculator counts amount blue balls in the basket.
+ *
+ * @author Dmitry Poliukov
+ */
 public class BlueBallsCounterCalculator {
 
     public int blueBallsCounter(Iterator<Ball> ballsIterator) {

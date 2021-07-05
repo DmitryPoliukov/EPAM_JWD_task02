@@ -2,6 +2,11 @@ package by.epamtc.poliukov.task02.reader;
 
 import java.util.Scanner;
 
+/**
+ * Class DataReader read information for creation or removing balls from console.
+ *
+ * @author Dmitry Poliukov
+ */
 public class DataReader {
     Scanner stringScanner = new Scanner(System.in);
 

@@ -5,9 +5,14 @@ import by.epamtc.poliukov.task02.exception.OverWeightCapacityException;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+
+/**
+ * The Class Basket is entity class describing the basket.
+ *
+ * @author Dmitry Poliukov
+ */
 
 public class Basket implements Serializable {
     private static final long serialVersionUID = 1L;

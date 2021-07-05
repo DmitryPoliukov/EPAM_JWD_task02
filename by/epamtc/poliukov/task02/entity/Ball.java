@@ -2,6 +2,12 @@ package by.epamtc.poliukov.task02.entity;
 
 import java.io.Serializable;
 
+/**
+ * The Class Ball is entity class describing the ball.
+ *
+ * @author Dmitry Poliukov
+ */
+
 public class Ball implements Serializable {
 
     private Color color;
